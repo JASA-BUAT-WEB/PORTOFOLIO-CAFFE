@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Nikmati kopi pilihan dan suasana terbaik di Noir Coffee.">
+  <title>NOIR COFFEE — Crafted for Your Moments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement">
+    FRESHLY BREWED EVERY DAY <span>✦</span> MADE WITH PASSION
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">NOIR<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Beranda</a>
+      <a href="#menu">Menu Kami</a>
+      <a href="#story">Tentang</a>
+      <a href="#contact" class="nav-button">Kunjungi Kami ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> YOUR DAILY COFFEE ESCAPE</div>
+
+        <h1>Life begins<br>after <em>coffee.</em></h1>
+
+        <p>
+          Setiap cangkir punya cerita. Temukan racikan kopi
+          favoritmu, nikmati suasana hangat, dan buat harimu
+          terasa lebih istimewa.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="button button-gold">Jelajahi Menu <span>↗</span></a>
+          <a href="#story" class="button button-outline">Cerita Kami</a>
+        </div>
+
+        <div class="hero-info">
+          <div class="rating">★★★★★</div>
+          <div>
+            <strong>Good coffee, good mood.</strong>
+            <small>Teman terbaik untuk setiap momen.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85"
+          alt="Kopi segar dengan suasana kafe"
+        >
+
+        <div class="floating-card">
+          <span class="floating-icon"></span>
+          <div>
+            <small>OUR SIGNATURE</small>
+            <strong>Midnight Latte</strong>
+            <span>Rich · Smooth · Creamy</span>
+          </div>
+        </div>
+
+        <div class="image-index">01 — NOIR COFFEE</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>EST. FOR COFFEE LOVERS</span>
+        <span>GOOD TASTE. BETTER MOMENTS.</span>
+        <a href="#menu">SCROLL TO DISCOVER ↓</a>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">THE NOIR COLLECTION</span>
+          <h2>Made to be<br><em>savored.</em></h2>
+        </div>
+        <p>
+          Racikan pilihan dengan bahan berkualitas
+          untuk menemani cerita dan kesibukanmu.
+        </p>
+      </div>
+
+      <div class="filter-list" role="group" aria-label="Filter kategori menu">
+        <button class="filter active" data-filter="all" aria-pressed="true">Semua Menu</button>
+        <button class="filter" data-filter="coffee" aria-pressed="false">Coffee</button>
+        <button class="filter" data-filter="noncoffee" aria-pressed="false">Non-Coffee</button>
+        <button class="filter" data-filter="food" aria-pressed="false">Food</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="coffee">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85" alt="Iced latte" loading="lazy">
+            <span class="product-tag">BEST SELLER</span>
+            <span class="product-number">01</span>
+          </div>
+          <div class="product-details">
+            <div>
+              <h3>Midnight Latte</h3>
+              <p>Espresso · Fresh milk · Ice</p>
+            </div>
+            <strong>Rp24.000</strong>
+          </div>
+          <button class="order-button" data-name="Midnight Latte" data-price="24000">
+            Pesan Sekarang <span>↗</span>
+          </button>
+        </article>
+
+        <article class="product-card" data-category="coffee">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85" alt="Kopi susu gula aren" loading="lazy">
+            <span class="product-number">02</span>
+          </div>
+          <div class="product-details">
+            <div>
+              <h3>Brown Sugar</h3>
+              <p>Arabica · Palm sugar · Milk</p>
+            </div>
+            <strong>Rp22.000</strong>
+          </div>
+          <button class="order-button" data-name="Brown Sugar" data-price="22000">
+            Pesan Sekarang <span>↗</span>
+          </button>
+        </article>
+
+        <article class="product-card" data-category="noncoffee">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=85" alt="Matcha latte" loading="lazy">
+            <span class="product-tag">FRESH PICK</span>
+            <span class="product-number">03</span>
+          </div>
+          <div class="product-details">
+            <div>
+              <h3>Velvet Matcha</h3>
+              <p>Premium matcha · Fresh milk</p>
+            </div>
+            <strong>Rp25.000</strong>
+          </div>
+          <button class="order-button" data-name="Velvet Matcha" data-price="25000">
+            Pesan Sekarang <span>↗</span>
+          </button>
+        </article>
+
+        <article class="product-card" data-category="food">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=85" alt="Roti panggang" loading="lazy">
+            <span class="product-number">04</span>
+          </div>
+          <div class="product-details">
+            <div>
+              <h3>Classic Toast</h3>
+              <p>Golden toast · Sweet topping</p>
+            </div>
+            <strong>Rp18.000</strong>
+          </div>
+          <button class="order-button" data-name="Classic Toast" data-price="18000">
+            Pesan Sekarang <span>↗</span>
+          </button>
+        </article>
+      </div>
+
+      <p class="demo-note">Harga dan menu di atas merupakan contoh demo, bukan daftar harga kedai nyata.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-visual">
+        <img
+          src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85"
+          alt="Interior kafe yang nyaman"
+          loading="lazy"
+        >
+        <div class="story-badge">BREWED<br>WITH<br>PASSION </div>
+      </div>
+
+      <div class="story-content">
+        <span class="eyebrow">A LITTLE ABOUT US</span>
+        <h2>Not just coffee.<br><em>A whole feeling.</em></h2>
+        <p>
+          NOIR hadir untuk mereka yang menghargai hal-hal sederhana.
+          Aroma kopi yang baru diseduh, ruang yang nyaman,
+          dan obrolan yang membuat waktu terasa lebih lambat.
+        </p>
+        <p>
+          Datang untuk kopinya. Tinggal karena suasananya.
+        </p>
+        <a href="#contact" class="story-link">Kenali NOIR lebih dekat <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <span class="eyebrow">YOUR TABLE IS WAITING</span>
+      <h2>Make today<br><em>a little better.</em></h2>
+      <p>Kopi favoritmu mungkin hanya sejauh satu pesan.</p>
+
+      <a href="#" class="button button-gold" id="contactButton">
+        Pesan via WhatsApp <span>↗</span>
+      </a>
+
+      <div class="contact-grid">
+        <div>
+          <span>FIND US</span>
+          <strong>Isi alamat kafe di sini</strong>
+        </div>
+        <div>
+          <span>OPEN HOURS</span>
+          <strong>08.00 – 22.00 WIB</strong>
+        </div>
+        <div>
+          <span>FOLLOW ALONG</span>
+          <strong>@noircoffee</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">NOIR<span>.</span></a>
+    <p>Crafted for your moments.</p>
+    <small>© <span id="year"></span> NOIR COFFEE · Demo by ADENCODE</small>
+  </footer>
+
+</body>
+</html>
